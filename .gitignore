@@ -1,0 +1,6 @@
+*.pyc
+*cache*/
+.DS_Store
+
+data/pages/
+data/music/
