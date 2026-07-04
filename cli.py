@@ -41,6 +41,11 @@ def main():
   inspect_parser = subparsers.add_parser(
       "inspect-art", help="Inspect artwork dimensions, DPI, and metadata")
 
+
+  # Scrape bandcamp command
+  scrape_parser = subparsers.add_parser(
+      "scrape-bandcamp", help="Scrape Wingdings Bandcamp releases")
+
   args = parser.parse_args()
 
   print("=================================================================")
@@ -62,6 +67,10 @@ def main():
 
   elif args.command == "inspect-art":
     utils.inspect_artwork_metadata()
+
+
+  elif args.command == "scrape-bandcamp":
+    utils.scrape_bandcamp_releases()
 
   else:
     parser.print_help()

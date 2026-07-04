@@ -17,11 +17,12 @@ help:
 	@echo "  make spectrals       - Generate spectrals for TEXT059"
 	@echo "  make cover-analysis  - Run LSB and FFT image analysis on cover art"
 	@echo "  make inspect-art     - Inspect artwork dimensions, DPI, and metadata"
+	@echo "  make scrape-bandcamp - Scrape historical releases from Bandcamp"
 	@echo "  make fetch-data      - Verify raw web data dumps in data/"
 	@echo "  make clean           - Remove generated spectrals and temporary outputs"
 	@echo "========================================================================"
 
-all: format test decode spectrals cover-analysis
+all: format test decode spectrals cover-analysis scrape-bandcamp
 
 setup:
 	@$(PYTHON) -m pip install -r requirements.txt --break-system-packages
@@ -41,6 +42,9 @@ spectrals:
 
 spectrals-text059:
 	@$(PYTHON) cli.py spectrals TEXT059
+
+scrape-bandcamp:
+	@$(PYTHON) cli.py scrape-bandcamp
 
 cover-analysis:
 	@$(PYTHON) cli.py cover-analysis

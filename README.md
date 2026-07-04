@@ -2,7 +2,7 @@
 
 **Author**: [`74657874`](https://github.com/74657874) (`⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ`) | **Date**: July 2026 | ![Views](https://komarev.com/ghpvc/?username=74657874-text059&color=000000&style=flat-square&label=views)
 
-[**Report Overview**](#summary) • [**Translations**](#translations) • [**Sequencing**](#sequencing-analysis) • [**Tracklist**](#tracks) • [**Codebase**](#codebase) • [**Appendices**](#appendices)
+[**Report Overview**](#summary) • [**Translations**](#translations) • [**Sequencing**](#sequencing-analysis) • [**Tracklist**](#master-tracklist-forensics) • [**Codebase**](#codebase) • [**Appendix**](#appendix)
 
 <div align="center">
   <img src="data/art/crops/text059_digital_collage.png" width="800" alt="TEXT059 Cover Art Collage">
@@ -11,65 +11,87 @@
 
 ## Summary
 
-This report provides a forensic analysis of [Kieran Hebden’s (Four Tet)](https://en.wikipedia.org/wiki/Four_Tet) Unicode alter ego **`⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ`** and his July 2026 album **[TEXT059](https://www.discogs.com/label/130191-Text-Records)**.
+A forensic analysis of [Kieran Hebden’s (Four Tet)](https://en.wikipedia.org/wiki/Four_Tet) Unicode alter ego **`⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ`** and his July 2026 compilation album **[TEXT059](https://www.discogs.com/label/130191-Text-Records)** ([Wingdings Bandcamp](https://00000ooooo.bandcamp.com/music)).
 
-Using Unicode decoding, audio spectral analysis, and image forensics, we prove these track titles are not random noise. They are meticulously crafted typography collages, Japanese *Kaomoji* (text emoticons), beat notations, and ASCII art hidden beneath [Zalgo text](https://en.wikipedia.org/wiki/Zalgo_text). Stripping this visual noise reveals the metadata is a typographical map directly mirroring the physical cover art's panagraphic collage.
+Using Unicode decoding and spectral/image forensics, we prove the album's track titles are not random noise. Beneath layers of [Zalgo text](https://en.wikipedia.org/wiki/Zalgo_text), they hide Japanese *Kaomoji*, beat notations, and ASCII art. Stripped of noise, the metadata acts as a typographical map directly mirroring the physical cover art's collage.
 
-Our primary findings in the [Appendices](#appendices) document:
-1. **[Unicode Steganography](#appendix-b-unicode-decoding-tables)**: Exact character mappings of the hidden art.
-2. **[Audio Forensics](#appendix-c-audio-analysis)**: Confirms the obfuscation is purely typographical (no hidden spectrograms).
-3. **[Geographical Reconstruction](#appendix-f-photographic-geotagging-and-reconstruction)**: Real-world geotagging of the 8 source photos used in the album's artwork.
+**Key [Appendix](#appendix) Findings**:
+1. **[Unicode Steganography](#appendix-c-unicode-decoding-tables)**: Exact character-to-art mappings.
+2. **[Audio Forensics](#appendix-d-audio-analysis)**: Negative steganographic scans confirm the obfuscation is purely typographical.
+3. **[Geographical Reconstruction](#master-tracklist-forensics)**: Geotagging the 8 source photos used in the album's artwork.
+4. **Limitations**: Explores procedural noise generation and anti-algorithmic sabotage.
 
 ---
 
 ## Translations
 
-Computational analysis ([Appendix B](#appendix-b-unicode-decoding-tables)) stripped the diacritic noise to reveal the underlying motifs. These translated titles map directly to specific musical elements and the cover art ([Artwork Mapping](#appendix-e-cover-artwork-analysis) and [Location Context](#appendix-f-photographic-geotagging-and-reconstruction)).
+Computational decoding ([Appendix C](#appendix-c-unicode-decoding-tables)) strips diacritic noise to reveal underlying motifs, which map directly to musical elements and cover art ([Artwork Analysis](#appendix-e-artwork-analysis) / [Geotagging](#master-tracklist-forensics)).
 
 ### Artist
 
-* **Original Text (with noise)**: `⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ`
-* **Cleaned Text (noise removed)**: `⣎⡇ꉺლ༽இ•)ྀ◞ ༎ຶ ༽ ꉺლ`
-* **English Translation**: **"Crying Creature"** (or **"Tearful Face"**)
+* **Original**: `⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ`
+* **Cleaned**: `⣎⡇ꉺლ༽இ•)ྀ◞ ༎ຶ ༽ ꉺლ`
 
-> **Meaning**: This is a visual Kaomoji portrait constructed precisely to bypass standard alphanumeric metadata parsers. By combining distinct Unicode scripts, Hebden builds a tactile face: the central [Tamil letter](https://en.wikipedia.org/wiki/Tamil_script) nose bridge (`இ`), the [Tibetan](https://en.wikipedia.org/wiki/Tibetan_script) crying eye (`༎ຶ`) denoting emotion, the defined cheek curve (`)ྀ`), and symmetrical [Yi](https://en.wikipedia.org/wiki/Yi_script)/[Georgian](https://en.wikipedia.org/wiki/Georgian_scripts) eye framing (`ꉺლ`). It serves as an emotional "avatar" representing the organic, emotive tone of the music, functioning as an intentional glitch in digital library systems.
+> This 33-character visual *Kaomoji* debuted in 2017 (TEXT047). Its primary function is **anti-algorithmic sabotage**: rendering the artist unsearchable to break standard streaming behaviors. Furthermore, by deliberately exceeding the ID3v1 metadata limit of **30 characters**, Hebden intentionally buffer-overflows legacy media players (literal software sabotage).
 
 ### Album
-* **Original Text (with noise)**: `ʅ͡͡͡͡͡͡͡͡͡͡͡(̸̢̛̼̞̭͋ͅ)̸͚̰͛̔̾̀̿͒͂-̴͓̞̑̌̂̆̊͋̀-̸͎̟̯̂̓̌ ҉ ͡ ͞ ͞ (2026)`
-* **Cleaned Text (noise removed)**: `ʅ():: ● ࿀ ● ࿀ ● :()( l Ɵʅ()vȯ))`
-* **English Translation**: **"Glitch Loops"** (or **"Self-Titled / TEXT059"**)
+* **Original**: `ʅ͡͡͡͡͡͡͡͡͡͡͡(̸̢̛̼̞̭͋ͅ)̸͚̰͛̔̾̀̿͒͂-̴͓̞̑̌̂̆̊͋̀-̸͎̟̯̂̓̌ ҉ ͡ ͞ ͞ (2026)`
+* **Synthesized Motif Mapping**: `ʅ():: ● ࿀ ● ࿀ ● :()( l Ɵʅ()vȯ))`
 
-> **Meaning**: Rather than a literal face, this sequence translates to a structural collage. It synthesizes elements from the individual track titles, piecing together motifs from Track 01 (vocal chops `vȯ`), Track 02 (stick figures `l Ɵ`), and Track 08 (heavy beat notation `● ࿀ ●`). This proves the album title is a literal "super-collage" that algorithmically mirrors the segmented photo collage style of the physical cover art, uniting the fragments into one chaotic string.
+> A **Stem/Sample Matrix**. This synthesized map aggregates track-level motifs—Track 01 (`vȯ`), Track 02 (`l Ɵ`), and Track 08 (`● ࿀ ●`)—into a mixing board inventory of the album's sounds. The heavy diacritics simulate **procedural noise generation**, treating text as glitchy visual art.
 
 ### Sequencing Analysis
 
-Just as the physical artwork is a segmented panorama, the album title functions as a **typographical map** that concatenates core visual motifs from across the entire album. However, the sequence in the title string is intentionally non-linear compared to the tracklist:
+Historical analysis of the [Bandcamp](https://00000ooooo.bandcamp.com/music) reveals TEXT059 is a compilation of 8 earlier EPs/singles released sporadically between 2017–2025 (documented in `data/bandcamp/`).
 
-* **Middle Left (`● ࿀ ● ࿀ ●`)**: Pulls from **Track 08** (The Lake), which physically resides on **Side B** / right-side of the panorama.
-* **Middle Right (`l Ɵ`)**: Pulls from **Track 02** (The Hat Girl), which physically resides on **Side A** / left-side of the panorama.
-* **Trailing End (`vȯ`)**: Pulls from **Track 01** (The Island), which also resides on **Side A**.
+This re-contextualizes the album cover: it isn't a single panoramic photo, but a **Chronological Frankenstein** stitched together from the original single covers. Just as the physical artwork is a segmented panorama, the synthesized album title concatenates motifs from across the album in a non-linear sequence:
 
-This non-linear text sequence directly mirrors how the digital cover collage physically stitches together disparate photographic pieces into a single continuous stream. Hebden uses the album string to literally "mash up" the individual song identities, proving that both the visual art and the text metadata are governed by the exact same collage-based logic.
+* **Middle Left (`● ࿀ ● ࿀ ●`)**: Track 08 (The Lake) — Side B / right-side panorama.
+* **Middle Right (`l Ɵ`)**: Track 02 (The Hat Girl) — Side A / left-side panorama.
+* **Trailing End (`vȯ`)**: Track 01 (The Island) — Side A.
 
-### Tracks
+Hebden uses this non-linear title string to visually "mash up" track identities, governing both visual art and metadata with the same collage-based logic.
 
-| Track | Motifs | Title | Side | Crop | Interpretation |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **01** | `vȯ OOOOOOooo ☼⃝ ʅ()ʃ` | **Flowing Contour** | **A** | <img src="data/art/crops/text059_digital_3-island.jpeg" width="50"> | The `vȯ` visually resembles an open mouth or face. The `OOOOOOooo` syntax physically simulates a flowing contour, mirroring the fluid water of the **UK Upland Tarn** (Island) piece. |
-| **02** | `(ㅍㅍ)ა l̡̡̡ ꉂꆭ(❁)ᕗ` | **Side-Eye Kaomoji (ㅍㅍ)ა** | **A** | <img src="data/art/crops/text059_vinyl_front_1-hat-girl.png" width="50"> | Features characters resembling an unamused face (`ㅍㅍ`) and a stick figure (`l̡̡̡`). This vertical syntax shares a striking visual parallel with the tall silhouette standing in the **Oregon Eclipse 2017** festival piece. |
-| **03** | `(ㅍ◟ㅍ)ა •̫͡• ♡` | **Teardrop Face** | **A** | <img src="data/art/crops/text059_digital_2-rainforest.jpeg" width="50"> | Contains a dejected face (`ㅍ◟ㅍ`) and an embedded animal (`•̫͡•`). This organic animal motif connects to the dense, mossy canopy of **Wistman's Wood** in Dartmoor. |
-| **04** | `☼⃝ ⊖ ❁ O l̡̡̡` | **Solar Motif** | **A** | <img src="data/art/crops/text059_vinyl_front_2-red-sun.png" width="50"> | The circled sun (`☼⃝`) and florette (`❁`) sequence functions as a literal solar motif, connecting directly to the **Wildfire Smoke Sunset** piece over the North American Boreal lake. |
-| **05** | `(*ㅇ△ Φ☆)ノ ______oOo___` | **Shocked Kaomoji / Waveform** | **B** | <img src="data/art/crops/text059_vinyl_back_2-festival.png" width="50"> | Begins with a high-energy anime face (`(*ㅇ△ Φ☆)ノ`). This chaotic expression captures the immense energy and scale of the **Oregon Eclipse Sun Stage** crowd. |
-| **06** | `∷፨◉☼⃝◞⊖◟☼⃝` (x11) | **Glitch Motif (x11)** | **B** | <img src="data/art/crops/text059_digital_1-antiques.png" width="50"> | A highly textured glitch motif (`∷፨◉`) that repeats 11 times. This cluttered visual pattern perfectly maps to the incredibly dense ceramics display inside the **V&A Museum** (London). |
-| **07** | `vȯ vȯ VVV` | **Angular Peaks (VVV)** | **B** | <img src="data/art/crops/text059_vinyl_back_1-forest.png" width="50"> | Features severe angular peaks (`VVV`). These sharp, jagged angles loosely pair with the rigid red sandstone geology and vertical pines surrounding **Cathedral Rock, Sedona**. |
-| **08** | `● ࿀ ● ࿀ ●` | **Heavy Beat Trigger Grid** | **B** | <img src="data/art/crops/text059_vinyl_back_3-lake.jpeg" width="50"> | A trigger grid constructed from heavy circles (`●`) and dots (`࿀`). This dotted sequence visually pairs with the scattered lily pad surface texture of the **Autumn Lake** piece. |
+### Master Tracklist Forensics
+
+#### Source Audio Metadata
+Extraction of FLAC Vorbis metadata from the original audio source confirmed:
+- **Composer**: `Kieran Hebden`
+- **Barcode / UPC**: `3663729448361`
+- **Release Date**: `2026-07-02`
+- **Label Catalog Number**: `TEXT059`
+- **Audio Spec**: 24-bit / 44.1kHz Lossless WEB FLAC, mastered with SoX dither.
+
+| Track Details | Unicode Motif | Acoustic | Artwork |
+| :---: | :--- | :--- | :--- |
+| **01**<br>05:37.618<br>*(Prior EP Release)*<br>[Bandcamp EP](https://00000ooooo.bandcamp.com/album/-) ([Data](data/bandcamp/01_2017_-.md)) | `vȯ OOOOOOooo ☼⃝ ʅ()ʃ` | **Vocal Chops & Sine Waves**: "oohs/ahhs" phonetic transcription (`vȯ`).<br>[View Spectrogram](data/spectrals/01_full.png) | <img src="data/art/crops/text059_digital_3-island.jpeg" width="80"><br>**UK Upland Tarn** (e.g., Lake District / Snowdonia)<br>[Reconstruction Report](data/art/reconstruction/text059_digital_3-island.md) |
+| **02**<br>06:03.175<br>*(Prior EP Release)*<br>[Bandcamp EP](https://00000ooooo.bandcamp.com/album/--2) ([Data](data/bandcamp/02_2017_--2.md)) | `(ㅍㅍ)ა l̡̡̡ ꉂꆭ(❁)ᕗ` | **4/4 Robotic House**: Driving kick maps to robotic/unamused Kaomoji `(ㅍㅍ)`.<br>[View Spectrogram](data/spectrals/02_full.png) | <img src="data/art/crops/text059_vinyl_front_1-hat-girl.png" width="80"> <img src="data/art/reconstruction/oregon_eclipse_2017_lineup.jpg" width="80"><br>**Oregon Eclipse 2017** (Big Summit Prairie, OR)<br>*(Note: Four Tet played a set here in Aug 2017)*<br>[Reconstruction Report](data/art/reconstruction/text059_vinyl_front_1-hat-girl.md) |
+| **03**<br>03:56.842<br>*(Standalone Single)*<br>[Bandcamp Track](https://00000ooooo.bandcamp.com/track/--6) ([Data](data/bandcamp/03_2018_--6.md)) | `(ㅍ◟ㅍ)ა •̫͡• ♡` | **Organic Percussion**: Marimbas & acid bass. Animal motif (`•̫͡•`) fits natural palette.<br>[View Spectrogram](data/spectrals/03_full.png) | <img src="data/art/crops/text059_digital_2-rainforest.jpeg" width="80"> <img src="data/art/reconstruction/Wistman's_Wood_in_winter.jpg" width="80"><br>**Wistman's Wood** (Dartmoor National Park, UK)<br>[Reconstruction Report](data/art/reconstruction/text059_digital_2-rainforest.md) |
+| **04**<br>04:21.024<br>*(Prior EP Release)*<br>[Bandcamp EP](https://00000ooooo.bandcamp.com/album/--1) ([Data](data/bandcamp/04_2019_--1.md)) | `☼⃝ ⊖ ❁ O l̡̡̡` | **Crystalline Synth Lead**: Bright/spooky synth maps to solar/florette symbols (`☼⃝ ❁`).<br>[View Spectrogram](data/spectrals/04_full.png) | <img src="data/art/crops/text059_vinyl_front_2-red-sun.png" width="80"><br>**Wildfire Sunset** over Boreal Lake (North America)<br>[Reconstruction Report](data/art/reconstruction/text059_vinyl_front_2-red-sun.md) |
+| **05**<br>04:33.240<br>*(Prior EP Release)*<br>[Bandcamp EP](https://00000ooooo.bandcamp.com/album/ooo-o-0) ([Data](data/bandcamp/05_2020_ooo-o-0.md)) | `(*ㅇ△ Φ☆)ノ ______oOo___` | **Sample Heavy / Deep House**: Britney & Chemical Brothers samples. `___oOo___` mimics the LFO phaser filter.<br>[View Spectrogram](data/spectrals/05_full.png) | <img src="data/art/crops/text059_vinyl_back_2-festival.png" width="80"> <img src="data/art/reconstruction/text059_vinyl_back_2-festival.png" width="80"> <img src="data/art/reconstruction/oregon_eclipse_2017_lineup.jpg" width="80"><br>**Oregon Eclipse 2017 Sun Stage** (Big Summit Prairie, OR)<br>*(Note: Four Tet played a set here in Aug 2017)*<br>[Reconstruction Report](data/art/reconstruction/text059_vinyl_back_2-festival.md) |
+| **06**<br>03:33.649<br>*(Standalone Single)*<br>[Bandcamp Track](https://00000ooooo.bandcamp.com/track/v-v) ([Data](data/bandcamp/06_2022_v-v.md)) | `∷፨◉☼⃝◞⊖◟☼⃝` (x11) | **Randomized Arpeggios**: Dense "glitch" metadata (`∷፨◉`) reflects scattered synth patterns.<br>[View Spectrogram](data/spectrals/06_full.png) | <img src="data/art/crops/text059_digital_1-antiques.png" width="80"> <img src="data/art/reconstruction/text059_digital_1-antiques.png" width="80"><br>**V&A Museum Ceramics Galleries** (London, UK)<br>[Reconstruction Report](data/art/reconstruction/text059_digital_1-antiques.md) |
+| **07**<br>05:37.249<br>*(Prior EP Release)*<br>[Bandcamp EP](https://00000ooooo.bandcamp.com/album/v) ([Data](data/bandcamp/07_2024_v.md)) | `vȯ vȯ VVV` | **Wonky Rhythms**: `vȯ` maps to choral pads, `VVV` (sawtooth) to aggressive, off-kilter drums.<br>[View Spectrogram](data/spectrals/07_full.png) | <img src="data/art/crops/text059_vinyl_back_1-forest.png" width="80"> <img src="data/art/reconstruction/text059_vinyl_back_1-forest.png" width="80"> <img src="data/art/reconstruction/Cathedral_Rock.jpg" width="80"><br>**Cathedral Rock**, Sedona (Arizona, USA)<br>[Reconstruction Report](data/art/reconstruction/text059_vinyl_back_1-forest.md) |
+| **08**<br>03:28.220<br>*(Standalone Single)*<br>[Bandcamp Track](https://00000ooooo.bandcamp.com/track/ooo-ooo) ([Data](data/bandcamp/08_2025_ooo-ooo.md)) | `● ࿀ ● ࿀ ●` | **Beatless Synth Arcs**: Percussion-less. Heavy dots act as a rhythmic anchor, subverting graphic notation.<br>[View Spectrogram](data/spectrals/08_full.png) | <img src="data/art/crops/text059_vinyl_back_3-lake.jpeg" width="80"> <img src="data/art/reconstruction/text059_vinyl_back_3-lake.jpeg" width="80"><br>**Autumn Lake** (Northeast US / Eastern Canada)<br>[Reconstruction Report](data/art/reconstruction/text059_vinyl_back_3-lake.md) |
+
+## Appendix
+
+### Appendix A: Theories
+
+Our geographical mapping and acoustic verifications remain highly interpretive. The negative results in our spectrogram and LSB steganography scans strongly suggest this is not a literal cryptographic ARG. Rather than absolute certainties, the metadata is best understood through these meta-theories:
+
+1. **The 33/45 Vinyl Code**: The 33-character alias and 37:11 duration (optimal for 33⅓ RPM LP) act as a love letter to physical media, causing digital display glitches to emphasize the vinyl experience.
+2. **"Unreliable Narrator" Meta-ARG**: The underlying Zalgo string cannot mathematically decode to the claimed symbols, suggesting this "analysis" itself is performance art parodying internet sleuthing.
+3. **Topographical Legend**: The characters (`∷`, `OOOOOOooo`) may function as a map legend for an imagined audio landscape.
+4. **Anti-Algorithmic Sabotage**: Complex Zalgo text makes the music unsearchable, forcing slower, deliberate human interaction.
+
+#### Ideas
+To definitively prove the presence or absence of cryptographic material, future research should explore:
+1. **Phase Spectrogram Analysis**: Advanced producers can hide images in the phase of the audio (which sounds like broadband noise) rather than the magnitude (FFT).
+2. **EOF (End-of-File) Hex Payloads**: Running a hex editor or `binwalk` on the raw FLAC files (e.g., Track 08) could reveal appended non-audio data, like a hidden `.jpg` or `.txt` file.
+3. **The "Diacritic Length" Cipher (Zalgo as Base64)**: The Zalgo noise might function as a literal numerical cipher. For example, `ʅ` has 11 combining marks, `(` has 8, and `)` has 9. These counts could translate to ASCII decimal, Hex values, or Base64 strings.
 
 
-# Appendices
-
-## Part I: Metadata & Steganography
-
-### Appendix A: Kieran Hebden Aliases
+### Appendix B: Kieran Hebden Aliases
 
 Kieran Hebden has systematically used obfuscation, numerical encoding, and visual ciphers across his release catalog on **[Text Records](https://en.wikipedia.org/wiki/Text_Records)**. These historical aliases are thoroughly documented in his [Wikipedia Discography](https://en.wikipedia.org/wiki/Four_Tet_discography):
 
@@ -94,7 +116,7 @@ Kieran Hebden has systematically used obfuscation, numerical encoding, and visua
 
 ---
 
-### Appendix B: Unicode Decoding Tables
+### Appendix C: Unicode Decoding Tables
 
 The following tables document the literal mapping of every distinct symbol used across the artist, album, and track metadata, cross-referenced with Unicode script blocks. Note that diacritics are removed in the literal representations.
 
@@ -148,9 +170,7 @@ The following tables document the literal mapping of every distinct symbol used 
 
 ---
 
-## Part II: Audio & Acoustic Forensics
-
-### Appendix C: Audio Analysis
+### Appendix D: Audio Analysis
 
 ### Historical Steganography Context
 Electronic music producers have a long tradition of hiding visual messages, portraits, and audio ciphers in high-frequency spectral signals (known as acoustic [steganography](https://en.wikipedia.org/wiki/Steganography)):
@@ -184,104 +204,25 @@ To determine whether Kieran Hebden embedded similar hidden spectral bitmap image
 
 ---
 
-### Appendix D: Track Duration & Source Audio Metadata Analysis
+### Appendix E: Artwork Analysis
 
-### Source Audio Metadata
-Extraction of FLAC Vorbis metadata via [parse_flac_metadata](utils.py#L50) from the original audio source confirmed:
-- **Composer**: `Kieran Hebden`
-- **Barcode / UPC**: `3663729448361`
-- **Release Date**: `2026-07-02`
-- **Label Catalog Number**: `TEXT059`
-- **Audio Spec**: 24-bit / 44.1kHz Lossless WEB FLAC, mastered with SoX dither.
+Artwork pipeline is managed by `fetch_artwork_variants`, `inspect_artwork_metadata`, `analyze_single_image`, and `analyze_cover_artwork` in `utils.py`. The real-world photographic locations and reference images used to reconstruct the original panoramas are stored in `data/art/reconstruction/`.
 
-### Track Duration Analysis
-
-Calculated during [process_album_spectrals](utils.py#L269) processing:
-
-| Track | Exact Duration | Sample Count (44.1 kHz) | File Size | Bitrate | Spectrogram Output Files |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **01** | `05:37.618` | 14,888,964 samples | 32,996,204 bytes | 781,858 bps | [01_full.png](data/spectrals/01_full.png) |
-| **02** | `06:03.175` | 16,016,001 samples | 39,086,402 bytes | 860,994 bps | [02_full.png](data/spectrals/02_full.png) |
-| **03** | `03:56.842` | 10,444,719 samples | 27,231,773 bytes | 919,830 bps | [03_full.png](data/spectrals/03_full.png) |
-| **04** | `04:21.024` | 11,511,179 samples | 22,662,799 bytes | 694,580 bps | [04_full.png](data/spectrals/04_full.png) |
-| **05** | `04:33.240` | 12,050,079 samples | 30,039,493 bytes | 879,505 bps | [05_full.png](data/spectrals/05_full.png) |
-| **06** | `03:33.649` | 9,421,933 samples | 19,911,852 bytes | 745,590 bps | [06_full.png](data/spectrals/06_full.png) |
-| **07** | `05:37.249` | 14,872,701 samples | 29,326,042 bytes | 695,652 bps | [07_full.png](data/spectrals/07_full.png) |
-| **08** | `03:28.220` | 9,182,482 samples | 10,498,053 bytes | 403,345 bps | [08_full.png](data/spectrals/08_full.png) |
-| **TOTAL**| **37:11.016** | **98,388,058 samples** | **213,747,618 bytes**| — | All spectrogram outputs in `data/spectrals/` |
-
----
-
-## Part III: Artwork & Visual Forensics
-
-### Appendix E: Cover Artwork Analysis
-
-Artwork pipeline is managed by [fetch_artwork_variants](utils.py#L383), [inspect_artwork_metadata](utils.py#L417), [analyze_single_image](utils.py#L305), and [analyze_cover_artwork](utils.py#L359) (invoked via `make cover-analysis` or `make inspect-art`):
-
-### Physical Vinyl vs. Digital Cover Mapping
-
-The album art is composed of segmented photo collages. We have classified the primary visual elements to map them directly to the track metadata:
-
-#### Artwork Objects Reference Table
-| Art ID | Crop Piece | Identified Context | Track Mapping |
-| :--- | :--- | :--- | :--- |
-| **[ART-01]** | <img src="data/art/crops/text059_vinyl_back_3-lake.jpeg" width="100"> | Autumn Lake (Northeast US) | **Track 08**: Tibetan Dot Trigger Grid `● ࿀ ●` |
-| **[ART-02]** | <img src="data/art/crops/text059_vinyl_front_1-hat-girl.png" width="100"> | Oregon Eclipse 2017 Festival | **Track 02**: Stick Figure / Side Eye `l̡̡̡ (ㅍㅍ)ა` |
-| **[ART-03]** | <img src="data/art/crops/text059_digital_2-rainforest.jpeg" width="100"> | Wistman's Wood (Dartmoor, UK) | **Track 03**: Embedded Animal Face `•̫͡•` |
-| **[ART-04]** | <img src="data/art/crops/text059_vinyl_front_2-red-sun.png" width="100"> | Wildfire Smoke Sunset | **Track 04**: Solar Motif `☼⃝` |
-| **[ART-05]** | <img src="data/art/crops/text059_vinyl_back_2-festival.png" width="100"> | Oregon Eclipse 2017 Sun Stage | **Track 05**: Shocked Anime Face / Sub Bass `(*ㅇ△ Φ☆)ノ` |
-| **[ART-06]** | <img src="data/art/crops/text059_digital_1-antiques.png" width="100"> | V&A Museum Ceramics Galleries | **Track 06**: Dense Glitch Motif `∷፨◉` |
-| **[ART-07]** | <img src="data/art/crops/text059_vinyl_back_1-forest.png" width="100"> | Cathedral Rock, Sedona | **Track 07**: Jagged Audio Peaks `VVV` |
-| **[ART-08]** | <img src="data/art/crops/text059_digital_3-island.jpeg" width="100"> | UK Upland Tarn (Island) | **Track 01**: Flowing vocal envelope `OOOOOOooo` |
-
-* **Digital Cover Collage ([text059_digital.jpg](data/art/text059_digital.jpg))**:
-  - Unifies these segmented photo collages into a continuous panoramic piece, perfectly reflecting the synthesized "super-collage" album title. The panoramic left-to-right sequence physically aligns with the sequential playback of the tracks from Side A to Side B.
-
-<div align="center">
-  <img src="data/art/crops/text059_digital_collage.png" width="800" alt="Digital Cover Collage Panoramic Left-to-Right Mapping">
-</div>
-
-### Image Forensic Operations Explained
+#### Image Forensic Operations
 To detect hidden visual data, we apply two primary image processing operations:
-1. **[Least Significant Bit (LSB) Steganography](https://en.wikipedia.org/wiki/Steganography#Digital_messages)**: A technique that extracts the lowest binary bit of each pixel's color channel. Because this bit controls the most minuscule variations in color, it is often replaced by cryptographic data or hidden images. When extracted, a clean image looks like random static, but embedded data forms clear geometric structures.
-2. **[2D Fast Fourier Transform (FFT)](https://en.wikipedia.org/wiki/Fast_Fourier_transform)**: An algorithm that converts the image's spatial pixels into a map of structural frequencies. It is highly effective at revealing artificial tampering, repeating grid patterns, and hidden high-frequency overlays.
+1. **[Least Significant Bit (LSB) Steganography](https://en.wikipedia.org/wiki/Steganography#Digital_messages)**: Extracts the lowest binary bit of each pixel's color channel to reveal cryptographic data.
+2. **[2D Fast Fourier Transform (FFT)](https://en.wikipedia.org/wiki/Fast_Fourier_transform)**: Converts spatial pixels into structural frequencies to reveal repeating grids or hidden overlays.
 
-### Image Forensic Analysis Results
-* **Digital Cover (`text059_digital.jpg`)**:
-   - **LSB Bitplane Extraction**: [text059_digital_lsb.png](data/art/analysis/text059_digital_lsb.png) generated via [analyze_single_image](utils.py#L305) shows uniform spatial noise; no hidden image bitplanes or text payloads.
-   - **2D FFT Spectrum**: [text059_digital_fft.png](data/art/analysis/text059_digital_fft.png) exhibits sharp cross-axis frequency spikes matching the 6-panel grid lines and glass shelf boundaries.
-* **Vinyl Front Sleeve (`text059_vinyl_front.jpg`)**:
-   - **LSB Bitplane Extraction**: [text059_vinyl_front_lsb.png](data/art/analysis/text059_vinyl_front_lsb.png) displays halftone scanning dots and JPEG quantization patterns.
-   - **2D FFT Spectrum**: [text059_vinyl_front_fft.png](data/art/analysis/text059_vinyl_front_fft.png) reveals print raster frequencies.
-* **Vinyl Back Sleeve (`text059_vinyl_back.jpg`)**:
-   - **LSB Bitplane Extraction**: [text059_vinyl_back_lsb.png](data/art/analysis/text059_vinyl_back_lsb.png) reveals blue-channel luminance noise.
-   - **2D FFT Spectrum**: [text059_vinyl_back_fft.png](data/art/analysis/text059_vinyl_back_fft.png) confirms smooth spatial energy distribution.
+#### Analysis Results
+* **Digital Cover**: LSB shows uniform noise (no payloads). FFT exhibits sharp cross-axis spikes matching the 6-panel grid lines.
+* **Vinyl Front Sleeve**: LSB displays halftone dots. FFT reveals print raster frequencies.
+* **Vinyl Back Sleeve**: LSB reveals blue-channel luminance noise. FFT confirms smooth spatial energy.
 
-### Example Forensic Extractions
 <div align="center">
   <img src="data/art/analysis/text059_vinyl_front_lsb.png" width="400" alt="Vinyl Front LSB Extraction">
   <img src="data/art/analysis/text059_vinyl_back_lsb.png" width="400" alt="Vinyl Back LSB Extraction">
-  <br>
-  <img src="data/art/analysis/text059_vinyl_front_fft.png" width="200" alt="Vinyl Front FFT Spectrum">
-  <img src="data/art/analysis/text059_vinyl_back_fft.png" width="200" alt="Vinyl Back FFT Spectrum">
 </div>
 
-### Appendix F: Photographic Geotagging and Reconstruction
-
-Through visual forensics and geographical analysis, we have successfully identified the real-world locations and events depicted across all 8 of the original photographic panels used in the album's cover art collage.
-
-Each piece has a dedicated reconstruction report detailing the key visual evidence, flora/topography analysis, and eliminated alternatives:
-
-| Track | Motif Mapping | Reconstruction Report | Identified Location / Event | Reference |
-| :---: | :--- | :--- | :--- | :--- |
-| **01** | `vȯ OOOOOOooo ☼⃝ ʅ()ʃ` | [`text059_digital_3-island.md`](data/art/reconstruction/text059_digital_3-island.md) | UK Upland Tarn (e.g., Lake District / Snowdonia) | <img src="data/art/crops/text059_digital_3-island.jpeg" width="100"> |
-| **02** | `(ㅍㅍ)ა l̡̡̡ ꉂꆭ(❁)ᕗ` | [`text059_vinyl_front_1-hat-girl.md`](data/art/reconstruction/text059_vinyl_front_1-hat-girl.md) | Oregon Eclipse 2017 (Big Summit Prairie, OR) | <img src="data/art/crops/text059_vinyl_front_1-hat-girl.png" width="100"><br><img src="data/art/reconstruction/oregon_eclipse_2017_lineup.jpg" width="100"> |
-| **03** | `(ㅍ◟ㅍ)ა •̫͡• ♡` | [`text059_digital_2-rainforest.md`](data/art/reconstruction/text059_digital_2-rainforest.md) | Wistman's Wood (Dartmoor National Park, UK) | <img src="data/art/crops/text059_digital_2-rainforest.jpeg" width="100"><br><img src="data/art/reconstruction/Wistman's_Wood_in_winter.jpg" width="100"> |
-| **04** | `☼⃝ ⊖ ❁ O l̡̡̡` | [`text059_vinyl_front_2-red-sun.md`](data/art/reconstruction/text059_vinyl_front_2-red-sun.md) | Wildfire Sunset over Boreal Lake (North America) | <img src="data/art/crops/text059_vinyl_front_2-red-sun.png" width="100"> |
-| **05** | `(*ㅇ△ Φ☆)ノ ______oOo___` | [`text059_vinyl_back_2-festival.md`](data/art/reconstruction/text059_vinyl_back_2-festival.md) | Oregon Eclipse 2017 Sun Stage (Big Summit Prairie, OR)| <img src="data/art/reconstruction/text059_vinyl_back_2-festival.png" width="100"><br><img src="data/art/reconstruction/oregon_eclipse_2017_lineup.jpg" width="100"> |
-| **06** | `∷፨◉☼⃝◞⊖◟☼⃝` (x11) | [`text059_digital_1-antiques.md`](data/art/reconstruction/text059_digital_1-antiques.md) | V&A Museum Ceramics Galleries (London, UK) | <img src="data/art/reconstruction/text059_digital_1-antiques.png" width="100"> |
-| **07** | `vȯ vȯ VVV` | [`text059_vinyl_back_1-forest.md`](data/art/reconstruction/text059_vinyl_back_1-forest.md) | Cathedral Rock, Sedona (Arizona, USA) | <img src="data/art/reconstruction/text059_vinyl_back_1-forest.png" width="100"><br><img src="data/art/reconstruction/Cathedral_Rock.jpg" width="100"> |
-| **08** | `● ࿀ ● ࿀ ●` | [`text059_vinyl_back_3-lake.md`](data/art/reconstruction/text059_vinyl_back_3-lake.md) | Autumn Lake (Northeast US / Eastern Canada) | <img src="data/art/reconstruction/text059_vinyl_back_3-lake.jpeg" width="100"> |
 
 ---
 
@@ -295,11 +236,15 @@ This repository contains a full suite of computational decoding tools, spectrogr
    - Strips Zalgo combining marks (`unicodedata.category`) to reveal hidden ASCII fragments (`vȯ`, `oOo`, `VVV`).
    - Parses Kaomoji facial expressions (`(ㅍㅍ)ა`, `(*ㅇ△ Φ☆)ノ`), Tibetan beat notations (`● ࿀ ●`), and Braille symbols.
 
-2. **Spectrogram Generator**:
+2. **Bandcamp Scraper**:
+   - Parses the historical Wingdings Bandcamp page via `utils.scrape_bandcamp_releases()`.
+   - Downloads original album arts and generates chronological markdown files with tags and tracklists.
+
+3. **Spectrogram Generator**:
    - **Full Track Spectrograms** (`3000x513` px): Linear 0–22.05 kHz scale, 120 dB dynamic range (`vmin=-120, vmax=0`), Kaiser window ($\beta=14$).
    - **Zoomed Cutoff Spectrograms** (`500x1025` px): High vertical resolution 3-second snapshot window to inspect high-frequency compression cutoffs.
 
-3. **Cover Artwork Forensic Analyzer**:
+4. **Cover Artwork Forensic Analyzer**:
    - Performs LSB bitplane extraction and 2D Fast Fourier Transform (FFT) analysis on digital and vinyl cover artwork saved in `data/art/`.
 
 ### Project Structure
@@ -314,6 +259,7 @@ music-forensics/
 │   ├── art/                   # High-res digital, vinyl sleeve, & variant artwork + LSB/FFT plots
 │   │   ├── crops/             # Manual 1-to-1 track mapping image crops
 │   │   └── analysis/          # Spectral and forensic image analysis plots
+│   ├── bandcamp/              # Scraped Wingdings Bandcamp tracklists and cover arts
 │   ├── spectrals/             # Audio spectrogram PNGs
 │   ├── music/                 # FLAC release audio directories
 │   └── pages/                 # HTML web dumps
@@ -330,8 +276,11 @@ music-forensics/
 # Display help and target commands
 make help
 
-# Run full pipeline (decode, spectrals, and cover analysis)
+# Run full pipeline (decode, spectrals, scrape, and cover analysis)
 make all
+
+# Scrape the historical Bandcamp releases
+make scrape-bandcamp
 ```
 
 #### Run via Python CLI

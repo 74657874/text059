@@ -449,3 +449,128 @@ def inspect_artwork_metadata(art_dir: str = None) -> None:
       if exif:
         print(f"  EXIF Tags: {len(exif)} found")
       print()
+
+
+def scrape_bandcamp_releases(html_path: str = None, output_dir: str = None) -> None:
+    """Scrapes bandcamp releases into markdown and downloads cover arts."""
+    import os
+
+    import bs4
+    import requests
+
+    if html_path is None:
+        html_path = '/Users/jakegarrison/.gemini/jetski/brain/b2cf5308-b8cb-4929-a5b3-7eaddb52076d/.system_generated/steps/2112/content.md'
+    if output_dir is None:
+        output_dir = 'data/bandcamp'
+
+    os.makedirs(output_dir, exist_ok=True)
+
+    RELEASE_DATES = {
+        '--5': 'July 2026',
+        'ooo-ooo': 'October 2025',
+        'v': 'October 2024',
+        'v-v': 'August 2022',
+        'ooo-o-0': 'May 2020',
+        '--1': 'October 2019',
+        '--6': 'March 2018',
+        '--2': 'October 2017',
+        '-': 'October 2017'
+    }
+
+    try:
+        with open(html_path, 'r') as f:
+            html = f.read()
+    except FileNotFoundError:
+        print(f"HTML file not found: {html_path}")
+        return
+
+    soup = bs4.BeautifulSoup(html, 'html.parser')
+    releases = soup.find_all('li', class_='music-grid-item')
+
+    # Reverse to process chronologically
+    releases = list(reversed(releases))
+
+    for idx, release in enumerate(releases, 1):
+        a_tag = release.find('a')
+        href = a_tag['href'] if a_tag else ''
+        if not href:
+            continue
+
+        slug = href.split('/')[-1]
+        full_link = f"https://00000ooooo.bandcamp.com{href}"
+
+        title_tag = release.find('p', class_='title')
+        title_text = title_tag.text.strip() if title_tag else 'Unknown'
+
+        img_tag = release.find('img')
+        img_url = ''
+        if img_tag:
+            if 'data-original' in img_tag.attrs:
+                img_url = img_tag['data-original']
+            elif 'src' in img_tag.attrs:
+                img_url = img_tag['src']
+
+        date_str = RELEASE_DATES.get(slug, 'Unknown')
+        year = date_str.split(' ')[-1] if ' ' in date_str else date_str
+
+        file_prefix = f"{idx:02d}_{year}_{slug}"
+
+        print(f"Scraping release: {file_prefix}...")
+
+        if img_url:
+            try:
+                img_resp = requests.get(img_url)
+                if img_resp.status_code == 200:
+                    img_path_full = os.path.join(output_dir, f"{file_prefix}.png")
+                    with open(img_path_full, 'wb') as img_f:
+                        img_f.write(img_resp.content)
+            except Exception as e:
+                print(f"Failed to download image for {slug}: {e}")
+
+        # Fetch individual album page for tracklist and tags
+        tracks = []
+        tags = []
+        try:
+            album_resp = requests.get(full_link)
+            if album_resp.status_code == 200:
+                album_soup = bs4.BeautifulSoup(album_resp.content, 'html.parser')
+                for tr in album_soup.find_all('tr', class_='track_row_view'):
+                    t_span = tr.find('span', class_='track-title')
+                    time_span = tr.find('span', class_='time')
+                    if t_span:
+                        t_title = t_span.text.strip()
+                        t_time = time_span.text.strip() if time_span else ''
+                        tracks.append(f"- {t_title} ({t_time})")
+
+                for tag in album_soup.find_all('a', class_='tag'):
+                    tags.append(tag.text.strip())
+        except Exception as e:
+            print(f"Failed to fetch {full_link}: {e}")
+
+        tracks_md = "\n".join(tracks) if tracks else "*(No tracks found)*"
+        tags_md = ", ".join(tags) if tags else "*(No tags found)*"
+
+        md_content = f"""# Release: {slug}
+
+**Title:** `{title_text}`
+**Date:** {date_str}
+**Link:** [{full_link}]({full_link})
+
+## Cover Art
+![Cover Art]({file_prefix}.png)
+
+## Tracklist
+{tracks_md}
+
+## Tags
+{tags_md}
+"""
+        md_path = os.path.join(output_dir, f"{file_prefix}.md")
+        with open(md_path, 'w') as f:
+            f.write(md_content)
+    print(f"Successfully scraped releases into {output_dir}")
+
+if __name__ == '__main__':
+    # Test scraping functionality
+    print("Testing Bandcamp scraper...")
+    scrape_bandcamp_releases()
