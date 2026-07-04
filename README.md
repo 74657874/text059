@@ -2,7 +2,7 @@
 
 **Author**: [`74657874`](https://github.com/74657874) (`⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ`) | **Date**: July 2026 | ![Views](https://komarev.com/ghpvc/?username=74657874-text059&color=000000&style=flat-square&label=views)
 
-[**Report Overview**](#summary) • [**Translations**](#translations) • [**Sequencing**](#sequencing-analysis) • [**Tracklist**](#tracks) • [**Codebase**](#codebase)
+[**Report Overview**](#summary) • [**Translations**](#translations) • [**Sequencing**](#sequencing-analysis) • [**Tracklist**](#tracks) • [**Codebase**](#codebase) • [**Appendices**](#appendices)
 
 <div align="center">
   <img src="data/art/crops/text059_digital_collage.png" width="800" alt="TEXT059 Cover Art Collage">
@@ -11,17 +11,20 @@
 
 ## Summary
 
-This report analyzes [Kieran Hebden’s (Four Tet)](https://en.wikipedia.org/wiki/Four_Tet) Unicode/Kaomoji alter ego **`⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ`** and his July 2026 album **[TEXT059](https://www.discogs.com/label/130191-Text-Records)**.
+This report provides a forensic analysis of [Kieran Hebden’s (Four Tet)](https://en.wikipedia.org/wiki/Four_Tet) Unicode alter ego **`⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ`** and his July 2026 album **[TEXT059](https://www.discogs.com/label/130191-Text-Records)**.
 
-These titles are not random noise. They are crafted typography collages, Kaomoji, beat notations, and ASCII fragments hidden within [Zalgo text](https://en.wikipedia.org/wiki/Zalgo_text). Stripping the diacritics reveals motifs mirroring the album's segmented cover art.
+Using Unicode decoding, audio spectral analysis, and image forensics, we prove these track titles are not random noise. They are meticulously crafted typography collages, Japanese *Kaomoji* (text emoticons), beat notations, and ASCII art hidden beneath [Zalgo text](https://en.wikipedia.org/wiki/Zalgo_text). Stripping this visual noise reveals the metadata is a typographical map directly mirroring the physical cover art's panagraphic collage.
 
-> **[Kaomoji](https://en.wikipedia.org/wiki/Emoticon#Japanese_style)** (Japanese: 顔文字, 'face characters') are upright text emoticons (e.g., `(⊙_⊙)` or `༎ຶ`). They use diverse Unicode scripts to build detailed expressions and visual art.
+Our primary findings in the [Appendices](#appendices) document:
+1. **[Unicode Steganography](#appendix-b-unicode-decoding-tables)**: Exact character mappings of the hidden art.
+2. **[Audio Forensics](#appendix-c-audio-analysis)**: Confirms the obfuscation is purely typographical (no hidden spectrograms).
+3. **[Geographical Reconstruction](#appendix-f-photographic-geotagging-and-reconstruction)**: Real-world geotagging of the 8 source photos used in the album's artwork.
 
 ---
 
 ## Translations
 
-Computational analysis ([Appendix B](#appendix-b-unicode-decoding-tables)) stripped visual noise from the metadata. The resulting titles map directly to musical elements and physical artwork ([Artwork Mapping](#appendix-e-cover-artwork-analysis)).
+Computational analysis ([Appendix B](#appendix-b-unicode-decoding-tables)) stripped the diacritic noise to reveal the underlying motifs. These translated titles map directly to specific musical elements and the cover art ([Artwork Mapping](#appendix-e-cover-artwork-analysis) and [Location Context](#appendix-f-photographic-geotagging-and-reconstruction)).
 
 ### Artist
 
@@ -52,19 +55,21 @@ This non-linear text sequence directly mirrors how the digital cover collage phy
 
 | Track | Motifs | Title | Side | Crop | Interpretation |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **01** | `vȯ OOOOOOooo ☼⃝ ʅ()ʃ` | **Flowing Contour** | **A** | <img src="data/art/crops/text059_digital_3-island.jpeg" width="50"> | The `vȯ` visually resembles an open mouth or face. The `OOOOOOooo` syntax physically simulates a flowing contour, mirroring the fluid water of the **Island** piece. |
-| **02** | `(ㅍㅍ)ა l̡̡̡ ꉂꆭ(❁)ᕗ` | **Side-Eye Kaomoji (ㅍㅍ)ა** | **A** | <img src="data/art/crops/text059_vinyl_front_1-hat-girl.png" width="50"> | Features characters that visually resemble an unamused face (`ㅍㅍ`) and a stick figure (`l̡̡̡`). This vertical, humanoid-like syntax shares a striking visual parallel with the tall silhouette standing in the **Black Hat** piece. |
-| **03** | `(ㅍ◟ㅍ)ა •̫͡• ♡` | **Teardrop Face** | **A** | <img src="data/art/crops/text059_digital_2-rainforest.jpeg" width="50"> | Contains a dejected face (`ㅍ◟ㅍ`) and an embedded animal (`•̫͡•`). This organic animal motif connects to the dense **Rainforest** canopy piece. |
-| **04** | `☼⃝ ⊖ ❁ O l̡̡̡` | **Solar Motif** | **A** | <img src="data/art/crops/text059_vinyl_front_2-red-sun.png" width="50"> | The circled sun (`☼⃝`) and florette (`❁`) sequence functions as a literal solar motif, connecting directly to the **Red Sun** piece. |
-| **05** | `(*ㅇ△ Φ☆)ノ ______oOo___` | **Shocked Kaomoji / Waveform** | **B** | <img src="data/art/crops/text059_vinyl_back_2-festival.png" width="50"> | Begins with a high-energy anime face (`(*ㅇ△ Φ☆)ノ`). This chaotic expression captures the energy of the **Festival** crowd piece. |
-| **06** | `∷፨◉☼⃝◞⊖◟☼⃝` (x11) | **Glitch Motif (x11)** | **B** | <img src="data/art/crops/text059_digital_1-antiques.png" width="50"> | A dense, highly textured glitch motif (`∷፨◉`) that repeats exactly 11 times in the raw string. This cluttered visual pattern maps to the similarly cluttered **Antiques** shop piece. |
-| **07** | `vȯ vȯ VVV` | **Angular Peaks (VVV)** | **B** | <img src="data/art/crops/text059_vinyl_back_1-forest.png" width="50"> | Features dual `vȯ` symbols followed by severe angular peaks (`VVV`). These sharp, jagged angles loosely pair with the rigid branches and vertical lines in the **Forest** piece. |
-| **08** | `● ࿀ ● ࿀ ●` | **Heavy Beat Trigger Grid** | **B** | <img src="data/art/crops/text059_vinyl_back_3-lake.jpeg" width="50"> | A trigger grid constructed from heavy circles (`●`) and dots (`࿀`). This sparse, dotted sequence visually pairs with the scattered surface texture of the **Lake** piece. |
+| **01** | `vȯ OOOOOOooo ☼⃝ ʅ()ʃ` | **Flowing Contour** | **A** | <img src="data/art/crops/text059_digital_3-island.jpeg" width="50"> | The `vȯ` visually resembles an open mouth or face. The `OOOOOOooo` syntax physically simulates a flowing contour, mirroring the fluid water of the **UK Upland Tarn** (Island) piece. |
+| **02** | `(ㅍㅍ)ა l̡̡̡ ꉂꆭ(❁)ᕗ` | **Side-Eye Kaomoji (ㅍㅍ)ა** | **A** | <img src="data/art/crops/text059_vinyl_front_1-hat-girl.png" width="50"> | Features characters resembling an unamused face (`ㅍㅍ`) and a stick figure (`l̡̡̡`). This vertical syntax shares a striking visual parallel with the tall silhouette standing in the **Oregon Eclipse 2017** festival piece. |
+| **03** | `(ㅍ◟ㅍ)ა •̫͡• ♡` | **Teardrop Face** | **A** | <img src="data/art/crops/text059_digital_2-rainforest.jpeg" width="50"> | Contains a dejected face (`ㅍ◟ㅍ`) and an embedded animal (`•̫͡•`). This organic animal motif connects to the dense, mossy canopy of **Wistman's Wood** in Dartmoor. |
+| **04** | `☼⃝ ⊖ ❁ O l̡̡̡` | **Solar Motif** | **A** | <img src="data/art/crops/text059_vinyl_front_2-red-sun.png" width="50"> | The circled sun (`☼⃝`) and florette (`❁`) sequence functions as a literal solar motif, connecting directly to the **Wildfire Smoke Sunset** piece over the North American Boreal lake. |
+| **05** | `(*ㅇ△ Φ☆)ノ ______oOo___` | **Shocked Kaomoji / Waveform** | **B** | <img src="data/art/crops/text059_vinyl_back_2-festival.png" width="50"> | Begins with a high-energy anime face (`(*ㅇ△ Φ☆)ノ`). This chaotic expression captures the immense energy and scale of the **Oregon Eclipse Sun Stage** crowd. |
+| **06** | `∷፨◉☼⃝◞⊖◟☼⃝` (x11) | **Glitch Motif (x11)** | **B** | <img src="data/art/crops/text059_digital_1-antiques.png" width="50"> | A highly textured glitch motif (`∷፨◉`) that repeats 11 times. This cluttered visual pattern perfectly maps to the incredibly dense ceramics display inside the **V&A Museum** (London). |
+| **07** | `vȯ vȯ VVV` | **Angular Peaks (VVV)** | **B** | <img src="data/art/crops/text059_vinyl_back_1-forest.png" width="50"> | Features severe angular peaks (`VVV`). These sharp, jagged angles loosely pair with the rigid red sandstone geology and vertical pines surrounding **Cathedral Rock, Sedona**. |
+| **08** | `● ࿀ ● ࿀ ●` | **Heavy Beat Trigger Grid** | **B** | <img src="data/art/crops/text059_vinyl_back_3-lake.jpeg" width="50"> | A trigger grid constructed from heavy circles (`●`) and dots (`࿀`). This dotted sequence visually pairs with the scattered lily pad surface texture of the **Autumn Lake** piece. |
 
 
-# Appendix
+# Appendices
 
-## Appendix A: Kieran Hebden Aliases
+## Part I: Metadata & Steganography
+
+### Appendix A: Kieran Hebden Aliases
 
 Kieran Hebden has systematically used obfuscation, numerical encoding, and visual ciphers across his release catalog on **[Text Records](https://en.wikipedia.org/wiki/Text_Records)**. These historical aliases are thoroughly documented in his [Wikipedia Discography](https://en.wikipedia.org/wiki/Four_Tet_discography):
 
@@ -89,7 +94,7 @@ Kieran Hebden has systematically used obfuscation, numerical encoding, and visua
 
 ---
 
-## Appendix B: Unicode Decoding Tables
+### Appendix B: Unicode Decoding Tables
 
 The following tables document the literal mapping of every distinct symbol used across the artist, album, and track metadata, cross-referenced with Unicode script blocks. Note that diacritics are removed in the literal representations.
 
@@ -143,7 +148,9 @@ The following tables document the literal mapping of every distinct symbol used 
 
 ---
 
-## Appendix C: Audio Analysis
+## Part II: Audio & Acoustic Forensics
+
+### Appendix C: Audio Analysis
 
 ### Historical Steganography Context
 Electronic music producers have a long tradition of hiding visual messages, portraits, and audio ciphers in high-frequency spectral signals (known as acoustic [steganography](https://en.wikipedia.org/wiki/Steganography)):
@@ -177,7 +184,7 @@ To determine whether Kieran Hebden embedded similar hidden spectral bitmap image
 
 ---
 
-## Appendix D: Track Duration & Source Audio Metadata Analysis
+### Appendix D: Track Duration & Source Audio Metadata Analysis
 
 ### Source Audio Metadata
 Extraction of FLAC Vorbis metadata via [parse_flac_metadata](utils.py#L50) from the original audio source confirmed:
@@ -205,7 +212,9 @@ Calculated during [process_album_spectrals](utils.py#L269) processing:
 
 ---
 
-## Appendix E: Cover Artwork Analysis
+## Part III: Artwork & Visual Forensics
+
+### Appendix E: Cover Artwork Analysis
 
 Artwork pipeline is managed by [fetch_artwork_variants](utils.py#L383), [inspect_artwork_metadata](utils.py#L417), [analyze_single_image](utils.py#L305), and [analyze_cover_artwork](utils.py#L359) (invoked via `make cover-analysis` or `make inspect-art`):
 
@@ -214,16 +223,16 @@ Artwork pipeline is managed by [fetch_artwork_variants](utils.py#L383), [inspect
 The album art is composed of segmented photo collages. We have classified the primary visual elements to map them directly to the track metadata:
 
 #### Artwork Objects Reference Table
-| Art ID | Crop Piece | Motif | Track Mapping |
+| Art ID | Crop Piece | Identified Context | Track Mapping |
 | :--- | :--- | :--- | :--- |
-| **[ART-01]** | <img src="data/art/crops/text059_vinyl_back_3-lake.jpeg" width="100"> | Lake / Fluid Contours | **Track 08**: Tibetan Dot Trigger Grid `● ࿀ ●` |
-| **[ART-02]** | <img src="data/art/crops/text059_vinyl_front_1-hat-girl.png" width="100"> | Person in Black Hat | **Track 02**: Stick Figure / Side Eye `l̡̡̡ (ㅍㅍ)ა` |
-| **[ART-03]** | <img src="data/art/crops/text059_digital_2-rainforest.jpeg" width="100"> | Dense Rainforest | **Track 03**: Embedded Animal Face `•̫͡•` |
-| **[ART-04]** | <img src="data/art/crops/text059_vinyl_front_2-red-sun.png" width="100"> | Red Sun | **Track 04**: Solar Motif `☼⃝` |
-| **[ART-05]** | <img src="data/art/crops/text059_vinyl_back_2-festival.png" width="100"> | Chaos / Festival | **Track 05**: Shocked Anime Face / Sub Bass `(*ㅇ△ Φ☆)ノ` |
-| **[ART-06]** | <img src="data/art/crops/text059_digital_1-antiques.png" width="100"> | Antique Clutter | **Track 06**: Dense Glitch Motif `∷፨◉` |
-| **[ART-07]** | <img src="data/art/crops/text059_vinyl_back_1-forest.png" width="100"> | Angular Forest | **Track 07**: Jagged Audio Peaks `VVV` |
-| **[ART-08]** | <img src="data/art/crops/text059_digital_3-island.jpeg" width="100"> | Island Dots / Grid | **Track 01**: Flowing vocal envelope `OOOOOOooo` |
+| **[ART-01]** | <img src="data/art/crops/text059_vinyl_back_3-lake.jpeg" width="100"> | Autumn Lake (Northeast US) | **Track 08**: Tibetan Dot Trigger Grid `● ࿀ ●` |
+| **[ART-02]** | <img src="data/art/crops/text059_vinyl_front_1-hat-girl.png" width="100"> | Oregon Eclipse 2017 Festival | **Track 02**: Stick Figure / Side Eye `l̡̡̡ (ㅍㅍ)ა` |
+| **[ART-03]** | <img src="data/art/crops/text059_digital_2-rainforest.jpeg" width="100"> | Wistman's Wood (Dartmoor, UK) | **Track 03**: Embedded Animal Face `•̫͡•` |
+| **[ART-04]** | <img src="data/art/crops/text059_vinyl_front_2-red-sun.png" width="100"> | Wildfire Smoke Sunset | **Track 04**: Solar Motif `☼⃝` |
+| **[ART-05]** | <img src="data/art/crops/text059_vinyl_back_2-festival.png" width="100"> | Oregon Eclipse 2017 Sun Stage | **Track 05**: Shocked Anime Face / Sub Bass `(*ㅇ△ Φ☆)ノ` |
+| **[ART-06]** | <img src="data/art/crops/text059_digital_1-antiques.png" width="100"> | V&A Museum Ceramics Galleries | **Track 06**: Dense Glitch Motif `∷፨◉` |
+| **[ART-07]** | <img src="data/art/crops/text059_vinyl_back_1-forest.png" width="100"> | Cathedral Rock, Sedona | **Track 07**: Jagged Audio Peaks `VVV` |
+| **[ART-08]** | <img src="data/art/crops/text059_digital_3-island.jpeg" width="100"> | UK Upland Tarn (Island) | **Track 01**: Flowing vocal envelope `OOOOOOooo` |
 
 * **Digital Cover Collage ([text059_digital.jpg](data/art/text059_digital.jpg))**:
   - Unifies these segmented photo collages into a continuous panoramic piece, perfectly reflecting the synthesized "super-collage" album title. The panoramic left-to-right sequence physically aligns with the sequential playback of the tracks from Side A to Side B.
@@ -248,13 +257,31 @@ To detect hidden visual data, we apply two primary image processing operations:
    - **LSB Bitplane Extraction**: [text059_vinyl_back_lsb.png](data/art/analysis/text059_vinyl_back_lsb.png) reveals blue-channel luminance noise.
    - **2D FFT Spectrum**: [text059_vinyl_back_fft.png](data/art/analysis/text059_vinyl_back_fft.png) confirms smooth spatial energy distribution.
 
-### Example Extraction
-![Vinyl Front LSB Extraction](data/art/analysis/text059_vinyl_front_lsb.png)
+### Example Forensic Extractions
+<div align="center">
+  <img src="data/art/analysis/text059_vinyl_front_lsb.png" width="400" alt="Vinyl Front LSB Extraction">
+  <img src="data/art/analysis/text059_vinyl_back_lsb.png" width="400" alt="Vinyl Back LSB Extraction">
+  <br>
+  <img src="data/art/analysis/text059_vinyl_front_fft.png" width="200" alt="Vinyl Front FFT Spectrum">
+  <img src="data/art/analysis/text059_vinyl_back_fft.png" width="200" alt="Vinyl Back FFT Spectrum">
+</div>
 
-### Cover Art Visuals
-![Digital Cover](data/art/text059_digital.jpg)
-![Vinyl Front Sleeve](data/art/text059_vinyl_front.jpg)
-![Vinyl Back Sleeve](data/art/text059_vinyl_back.jpg)
+### Appendix F: Photographic Geotagging and Reconstruction
+
+Through visual forensics and geographical analysis, we have successfully identified the real-world locations and events depicted across all 8 of the original photographic panels used in the album's cover art collage.
+
+Each piece has a dedicated reconstruction report detailing the key visual evidence, flora/topography analysis, and eliminated alternatives:
+
+| Track | Motif Mapping | Reconstruction Report | Identified Location / Event | Reference |
+| :---: | :--- | :--- | :--- | :--- |
+| **01** | `vȯ OOOOOOooo ☼⃝ ʅ()ʃ` | [`text059_digital_3-island.md`](data/art/reconstruction/text059_digital_3-island.md) | UK Upland Tarn (e.g., Lake District / Snowdonia) | <img src="data/art/crops/text059_digital_3-island.jpeg" width="100"> |
+| **02** | `(ㅍㅍ)ა l̡̡̡ ꉂꆭ(❁)ᕗ` | [`text059_vinyl_front_1-hat-girl.md`](data/art/reconstruction/text059_vinyl_front_1-hat-girl.md) | Oregon Eclipse 2017 (Big Summit Prairie, OR) | <img src="data/art/crops/text059_vinyl_front_1-hat-girl.png" width="100"><br><img src="data/art/reconstruction/oregon_eclipse_2017_lineup.jpg" width="100"> |
+| **03** | `(ㅍ◟ㅍ)ა •̫͡• ♡` | [`text059_digital_2-rainforest.md`](data/art/reconstruction/text059_digital_2-rainforest.md) | Wistman's Wood (Dartmoor National Park, UK) | <img src="data/art/crops/text059_digital_2-rainforest.jpeg" width="100"><br><img src="data/art/reconstruction/Wistman's_Wood_in_winter.jpg" width="100"> |
+| **04** | `☼⃝ ⊖ ❁ O l̡̡̡` | [`text059_vinyl_front_2-red-sun.md`](data/art/reconstruction/text059_vinyl_front_2-red-sun.md) | Wildfire Sunset over Boreal Lake (North America) | <img src="data/art/crops/text059_vinyl_front_2-red-sun.png" width="100"> |
+| **05** | `(*ㅇ△ Φ☆)ノ ______oOo___` | [`text059_vinyl_back_2-festival.md`](data/art/reconstruction/text059_vinyl_back_2-festival.md) | Oregon Eclipse 2017 Sun Stage (Big Summit Prairie, OR)| <img src="data/art/reconstruction/text059_vinyl_back_2-festival.png" width="100"><br><img src="data/art/reconstruction/oregon_eclipse_2017_lineup.jpg" width="100"> |
+| **06** | `∷፨◉☼⃝◞⊖◟☼⃝` (x11) | [`text059_digital_1-antiques.md`](data/art/reconstruction/text059_digital_1-antiques.md) | V&A Museum Ceramics Galleries (London, UK) | <img src="data/art/reconstruction/text059_digital_1-antiques.png" width="100"> |
+| **07** | `vȯ vȯ VVV` | [`text059_vinyl_back_1-forest.md`](data/art/reconstruction/text059_vinyl_back_1-forest.md) | Cathedral Rock, Sedona (Arizona, USA) | <img src="data/art/reconstruction/text059_vinyl_back_1-forest.png" width="100"><br><img src="data/art/reconstruction/Cathedral_Rock.jpg" width="100"> |
+| **08** | `● ࿀ ● ࿀ ●` | [`text059_vinyl_back_3-lake.md`](data/art/reconstruction/text059_vinyl_back_3-lake.md) | Autumn Lake (Northeast US / Eastern Canada) | <img src="data/art/reconstruction/text059_vinyl_back_3-lake.jpeg" width="100"> |
 
 ---
 
@@ -326,3 +353,10 @@ make test
 # Trigger code formatter
 make format
 ```
+
+---
+
+### Cover Art Visuals
+<img src="data/art/text059_digital.jpg" width="800" alt="Digital Cover">
+<img src="data/art/text059_vinyl_front.jpg" width="400" alt="Vinyl Front Sleeve">
+<img src="data/art/text059_vinyl_back.jpg" width="400" alt="Vinyl Back Sleeve">
