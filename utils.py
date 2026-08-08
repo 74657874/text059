@@ -456,10 +456,16 @@ def scrape_bandcamp_releases(html_path: str = None, output_dir: str = None) -> N
     import os
 
     import bs4
+    import dotenv
     import requests
 
+    dotenv.load_dotenv()
     if html_path is None:
-        html_path = '/Users/jakegarrison/.gemini/jetski/brain/b2cf5308-b8cb-4929-a5b3-7eaddb52076d/.system_generated/steps/2112/content.md'
+        raw_path = os.getenv(
+            'BANDCAMP_HTML_PATH',
+            '~/.gemini/jetski/brain/b2cf5308-b8cb-4929-a5b3-7eaddb52076d/.system_generated/steps/2112/content.md'
+        )
+        html_path = os.path.expanduser(raw_path)
     if output_dir is None:
         output_dir = 'data/bandcamp'
 
